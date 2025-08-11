@@ -1,13 +1,13 @@
 {
-  "name": "Jane Doe",
+  "name": "Ethan Armstrong",
   "title": "Front-End Developer",
   "description": "Building interactive, accessible web experiences.",
-  "url": "https://janedoe.dev",
+  "url": "https://ethansportfolio.koines.org",
   "author": {
-    "name": "Jane Doe",
-    "email": "jane@janedoe.dev",
-    "twitter": "janedoe",
-    "github": "janedoe",
-    "linkedin": "jane-doe"
+    "name": "Ethan Armstrong",
+    "email": "ethanarmstrong111@gmail.com",
+    "twitter": "ethanarmstrong",
+    "github": "https://github.com/Solar918",
+    "linkedin": "ethan-armstrong"
   }
 }
