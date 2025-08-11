@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://janedoe.dev/projects/project-ml/</loc>
+  </url>
+
+  <url>
+    <loc>https://janedoe.dev/projects/project-studio/</loc>
+  </url>
+
+  <url>
+    <loc>https://janedoe.dev/projects/project-hello/</loc>
+  </url>
+
+  <url>
+    <loc>https://janedoe.dev/</loc>
+  </url>
+
+  <url>
+    <loc>https://janedoe.dev/404.html</loc>
+  </url>
+
+</urlset>
+

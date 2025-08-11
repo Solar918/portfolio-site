@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" class="no-js" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jane Doe · Front-End Developer</title>
+    <meta name="description" content="Building interactive, accessible web experiences." />
+
+    <meta property="og:title" content="Jane Doe" />
+    <meta property="og:description" content="Building interactive, accessible web experiences." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://janedoe.dev/404.html" />
+    <meta property="og:image" content="https://janedoe.dev/assets/images/placeholder.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@janedoe" />
+
+    <link rel="preload" href="/assets/styles/main.css" as="style" />
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    <script>
+      // Theme boot: avoid flash of wrong theme
+      (function () {
+        try {
+          const stored = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const theme = stored || (prefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+          document.documentElement.classList.remove('no-js');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+  <nav class="container nav">
+    <a class="brand" href="/" aria-label="Jane Doe home">Jane Doe</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <ul id="site-menu" class="menu">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+  <span class="icon" aria-hidden="true">🌗</span>
+</button>
+
+</li>
+    </ul>
+  </nav>
+</header>
+
+
+
+    <main id="main" tabindex="-1">
+      
+<section class="container section">
+  <h1>Page not found</h1>
+  <p>Sorry, we couldn’t find that page.</p>
+  <a class="btn" href="/">Go home</a>
+</section>
+
+
+    </main>
+
+    <footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© <span data-year></span> Jane Doe · Built with Eleventy</p>
+    <ul class="social">
+      <li><a href="https://github.com/janedoe" rel="me">GitHub</a></li>
+      <li><a href="https://twitter.com/janedoe" rel="me">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/jane-doe" rel="me">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+
+    <script defer src="/assets/scripts/main.js"></script>
+  </body>
+  </html>
+

@@ -1,0 +1,13 @@
+{
+  "name": "Jane Doe",
+  "title": "Front-End Developer",
+  "description": "Building interactive, accessible web experiences.",
+  "url": "https://janedoe.dev",
+  "author": {
+    "name": "Jane Doe",
+    "email": "jane@janedoe.dev",
+    "twitter": "janedoe",
+    "github": "janedoe",
+    "linkedin": "jane-doe"
+  }
+}

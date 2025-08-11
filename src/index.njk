@@ -1,0 +1,93 @@
+---
+layout: layouts/base.njk
+title: Home
+---
+
+<section class="hero container" aria-labelledby="intro-heading">
+  <div class="hero-content">
+    <h1 id="intro-heading">Hi, I’m {{ site.author.name }}.</h1>
+    <p class="lead">{{ site.description }}</p>
+    <div class="cta">
+      <a href="#projects" class="btn">See my work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="container section" aria-labelledby="projects-heading">
+  <header class="section-header">
+    <h2 id="projects-heading">Projects</h2>
+    <div class="controls">
+      <label class="search">
+        <span class="visually-hidden">Search projects</span>
+        <input id="project-search" type="search" placeholder="Search projects…" autocomplete="off" />
+      </label>
+      <details class="filters">
+        <summary>Filter by tech</summary>
+        <div class="filter-group" id="tech-filters">
+          {% for t in collections.techTags %}
+            <label><input type="checkbox" value="{{ t | lower }}" /> <span>{{ t }}</span></label>
+          {% endfor %}
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <div class="grid projects" id="project-grid">
+    {% for project in collections.projects %}
+      {% include "components/project-card.njk" %}
+    {% endfor %}
+  </div>
+
+  <dialog id="project-modal" aria-labelledby="modal-title">
+    <article class="modal-card">
+      <header class="modal-header">
+        <h3 id="modal-title">Title</h3>
+        <button class="icon-btn" data-modal-close aria-label="Close">✕</button>
+      </header>
+      <div class="modal-body">
+        <img id="modal-image" alt="" hidden />
+        <p id="modal-desc"></p>
+        <ul id="modal-tech" class="tech-list"></ul>
+      </div>
+      <footer class="modal-footer">
+        <a id="modal-live" class="btn" href="#" target="_blank" rel="noopener" hidden>Live</a>
+        <a id="modal-code" class="btn btn-ghost" href="#" target="_blank" rel="noopener" hidden>Code</a>
+      </footer>
+    </article>
+  </dialog>
+</section>
+
+<section id="about" class="container section" aria-labelledby="about-heading">
+  <h2 id="about-heading">About</h2>
+  <p>
+    I’m a {{ site.title | lower }}, focused on building interactive, performant, and accessible interfaces.
+    I enjoy working with modern web standards, progressive enhancement, and clean design systems.
+  </p>
+  <ul class="skills">
+    <li>JavaScript</li>
+    <li>TypeScript</li>
+    <li>Node.js</li>
+    <li>CSS/Sass</li>
+    <li>Eleventy</li>
+    <li>React</li>
+  </ul>
+  <a class="btn" href="#contact">Work with me</a>
+  
+</section>
+
+<section id="contact" class="container section" aria-labelledby="contact-heading">
+  <h2 id="contact-heading">Contact</h2>
+  <p>Prefer email? <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact" />
+    <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+    <div class="form-row">
+      <label>Name<input required name="name" autocomplete="name" /></label>
+      <label>Email<input required type="email" name="email" autocomplete="email" /></label>
+    </div>
+    <label>Message<textarea required name="message" rows="5"></textarea></label>
+    <button class="btn" type="submit">Send</button>
+  </form>
+</section>
+
