@@ -1,5 +1,5 @@
 ---
-title: Hello World App
+title: Hello World App test
 description: A minimal app demonstrating fast loads and clean UI.
 tech: ["Eleventy", "JavaScript", "CSS"]
 url: https://example.com/hello
