@@ -1,13 +1,11 @@
 {
   "name": "Ethan Armstrong",
-  "title": "Front-End Developer",
-  "description": "Building interactive, accessible web experiences.",
+  "title": "Portfolio",
+  "description": "Welcome to my Tech Portfolio! Here you will find a showcase of my projects, experiments, and accomplishments in technology and software development. From coding challenges and personal builds to collaborative work, this portfolio highlights my skills, growth, and passion for creating innovative solutions. Explore my journey as I continue to learn and build exciting tech projects.",
   "url": "https://ethansportfolio.koines.org",
   "author": {
     "name": "Ethan Armstrong",
     "email": "ethanarmstrong111@gmail.com",
-    "twitter": "ethanarmstrong",
     "github": "https://github.com/Solar918",
-    "linkedin": "ethan-armstrong"
   }
 }

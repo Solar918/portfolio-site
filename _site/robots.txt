@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://janedoe.dev/sitemap.xml
+Sitemap: https://ethansportfolio.koines.org/sitemap.xml
 
