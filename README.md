@@ -8,6 +8,7 @@ An accessible, highly interactive personal portfolio built with Eleventy (11ty),
 2. Install deps: `npm install`.
 3. Run local dev server: `npm run dev`.
 4. Build for production: `npm run build` (outputs to `_site`).
+5. Serve production build: `python3 serve.py [port]` (default port 8000).
 
 ## Content model
 
@@ -26,4 +27,3 @@ An accessible, highly interactive personal portfolio built with Eleventy (11ty),
 
 - GitHub Pages: build with Eleventy and publish `_site/`.
 - Netlify/Vercel/Cloudflare: connect repo; set build command `npm run build`, publish directory `_site`.
-
