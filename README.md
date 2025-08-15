@@ -10,6 +10,11 @@ An accessible, highly interactive personal portfolio built with Eleventy (11ty),
 4. Build for production: `npm run build` (outputs to `_site`).
 5. Serve production build: `python3 serve.py [port]` (default port 8000).
 
+### Alternative (no local npm)
+6. Install Eleventy globally: `npm install -g @11ty/eleventy`.
+7. Build without `npm run`: `eleventy` (outputs to `_site`).
+8. Serve with Python: `python3 serve.py [port]`.
+
 ## Content model
 
 - Projects live in `src/projects/*.md` with front matter: `title`, `description`, `tech`, `url`, `repo`, `image`, `date`.
