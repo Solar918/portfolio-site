@@ -4,7 +4,11 @@ An accessible, highly interactive personal portfolio built with Eleventy (11ty),
 
 ## Quick start
 
-1. Install Node 18+.
+1. Install Node.js (18+):
+   - macOS: `brew install node`
+   - Ubuntu/Debian: `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs`
+   - Fedora/RHEL: `sudo dnf module install nodejs:18`
+   - Windows: Download and run installer from https://nodejs.org/
 2. Install deps: `npm install`.
 3. Run local dev server: `npm run dev`.
 4. Build for production: `npm run build` (outputs to `_site`).
